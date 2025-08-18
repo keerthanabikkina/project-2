@@ -2,31 +2,54 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  menuClick(){
-    const navlist = document.getElementById("navlist");
-    navlist.classList.toggle("active");
-  }
 
   render() {
     return (
       <>
+        {/* Header section containing a logo */}
         <header>
-          <nav>
-            <div className='logo'>My Website</div>
-            <ul id="navlist">
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Contact</li>
-            </ul>
-            <div className='menu' onClick={()=>this.menuClick()}>&#9776;</div>
-          </nav>
+          <div className='logo'>My Projects</div>
+          {/* .logo class styles the text to look like a bold site/project title */}
         </header>
+
+        {/* Main content section displaying project cards in a grid layout */}
         <section>
-          <h1>Welcome to My Responsive Website</h1>
-          <p>This design adopts that various screen sizes</p>
+          {/* Each card displays an image and a label/title below it */}
+          <div className='card'>
+            <img src='public/1.jpeg' alt='' />
+            <label>Project One</label>
+          </div>
+
+          <div className='card'>
+            <img src='public/2.jpeg' alt='' />
+            <label>Project Two</label>
+          </div>
+
+          <div className='card'>
+            <img src='public/3.jpeg' alt='' />
+            <label>Project Three</label>
+          </div>
+
+          <div className='card'>
+            <img src='public/4.jpeg' alt='' />
+            <label>Project Four</label>
+          </div>
+
+          <div className='card'>
+            <img src='public/5.jpeg' alt='' />
+            <label>Project Five</label>
+          </div>
+
+          <div className='card'>
+            <img src='public/6.jpeg' alt='' />
+            <label>Project Six</label>
+          </div>
         </section>
-        <footer>Copyright @ 2025. All rights reserved.</footer>
+
+        {/* Footer section with copyright notice */}
+        <footer>
+          Copyright @ 2025. All rights reserved.
+        </footer>
       </>
     );
   }

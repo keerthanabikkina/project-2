@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage" : "https://keerthanabikkina.gihub.io/project-2/",
-    "scripts": {
+  "homepage": "https://keerthanabikkina.gihub.io/project-2/",
+  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
